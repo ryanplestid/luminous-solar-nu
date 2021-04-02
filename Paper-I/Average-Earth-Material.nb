@@ -1,0 +1,1109 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     45211,       1101]
+NotebookOptionsPosition[     41144,       1032]
+NotebookOutlinePosition[     41522,       1049]
+CellTagsIndexPosition[     41479,       1046]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"https", ":"}], "//", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"linkinghub", ".", "elsevier", ".", "com"}], "/", "retrieve"}],
+       "/", "pii"}], "/", "S0012821X04007101"}]}], " ", "*)"}], " ", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"https", ":"}], "//", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"en", ".", "wikipedia", ".", "org"}], "/", "wiki"}], "/", 
+       "Earth"}], "%27", "s_mantle", "#cite", "_note"}], "-", "8"}]}], 
+   "*)"}]}]], "Input",
+ CellChangeTimes->{{3.805644556671886*^9, 3.805644557305208*^9}, {
+  3.805644610909745*^9, 3.8056446189733953`*^9}, {3.805644680665422*^9, 
+  3.8056446841603823`*^9}},ExpressionUUID->"db5f42d3-ec03-4fee-9dc4-\
+5c1579f23048"],
+
+Cell[BoxData[
+ RowBox[{"\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"SiO2", "=", 
+     RowBox[{"<|", " ", 
+      RowBox[{
+       RowBox[{"\"\<name\>\"", "\[Rule]", " ", "\"\<SiO2\>\""}], ",", " ", 
+       RowBox[{"\"\<mass %\>\"", "\[Rule]", "  ", "44.71"}], ",", 
+       RowBox[{
+       "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", "\[Rule]", " ", 
+        
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox["14", "2"], "+", 
+          RowBox[{"2", " ", 
+           SuperscriptBox["8", "2"]}]}], ")"}]}], " ", ",", 
+       RowBox[{"\"\<\[Sum] Z\>\"", "\[Rule]", " ", 
+        RowBox[{"(", 
+         RowBox[{"14", "+", 
+          RowBox[{"2", " ", "8"}]}], ")"}]}], ",", " ", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", " ", 
+        FractionBox[
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{
+          "\"\<(Molar Mass of SiO2)\>\"", ",", "\"\<WolframResult\>\""}], 
+          "]"}], 
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{"\"\<(Molar Mass of H)\>\"", ",", "\"\<WolframResult\>\""}],
+           "]"}]]}]}], "|>"}]}], " ", ";"}], "\n", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Al2O3", " ", "=", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<name\>\"", "\[Rule]", " ", "\"\<Al2O3\>\""}], ",", " ", 
+       RowBox[{"\"\<mass %\>\"", "\[Rule]", "  ", "3.98"}], ",", 
+       RowBox[{
+       "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", 
+           SuperscriptBox["13", "2"]}], "+", 
+          RowBox[{"3", " ", 
+           SuperscriptBox["8", "2"]}]}], ")"}]}], " ", ",", 
+       RowBox[{"\"\<\[Sum] Z\>\"", "\[Rule]", " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", "13", "+", 
+          RowBox[{"3", " ", "8"}]}], ")"}]}], ",", " ", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", " ", 
+        FractionBox[
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{
+          "\"\<(Molar Mass of Al203)\>\"", ",", "\"\<WolframResult\>\""}], 
+          "]"}], 
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{"\"\<(Molar Mass of H)\>\"", ",", "\"\<WolframResult\>\""}],
+           "]"}]]}]}], " ", "|>"}]}], " ", ";"}], "\n", 
+   RowBox[{
+    RowBox[{"FeO", " ", "=", 
+     RowBox[{"<|", " ", 
+      RowBox[{
+       RowBox[{"\"\<name\>\"", "\[Rule]", " ", "\"\<FeO\>\""}], ",", 
+       RowBox[{"\"\<mass %\>\"", "\[Rule]", "  ", "8.18"}], ",", 
+       RowBox[{
+       "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", "\[Rule]", " ", 
+        
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox["26", "2"], "+", 
+          SuperscriptBox["8", "2"]}], ")"}]}], ",", " ", 
+       RowBox[{"\"\<\[Sum] Z\>\"", "\[Rule]", " ", 
+        RowBox[{"(", 
+         RowBox[{"26", "+", "8"}], ")"}]}], ",", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", 
+        FractionBox[
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{
+          "\"\<(Molar Mass of FeO)\>\"", ",", "\"\<WolframResult\>\""}], 
+          "]"}], 
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{"\"\<(Molar Mass of H)\>\"", ",", "\"\<WolframResult\>\""}],
+           "]"}]]}]}], " ", "|>"}]}], " ", ";"}], "\n", 
+   RowBox[{
+    RowBox[{"MnO", " ", "=", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<name\>\"", "\[Rule]", " ", "\"\<MnO\>\""}], ",", " ", 
+       RowBox[{"\"\<mass %\>\"", "\[Rule]", "  ", "0.13"}], ",", 
+       RowBox[{
+       "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", "\[Rule]", " ", 
+        
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox["25", "2"], "+", 
+          SuperscriptBox["8", "2"]}], ")"}]}], ",", 
+       RowBox[{"\"\<\[Sum] Z\>\"", "\[Rule]", " ", 
+        RowBox[{"(", 
+         RowBox[{"25", "+", "8"}], ")"}]}], ",", " ", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", " ", 
+        FractionBox[
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{
+          "\"\<(Molar Mass of MnO)\>\"", ",", "\"\<WolframResult\>\""}], 
+          "]"}], 
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{"\"\<(Molar Mass of H)\>\"", ",", "\"\<WolframResult\>\""}],
+           "]"}]]}]}], "|>"}]}], " ", ";"}], "\n", 
+   RowBox[{
+    RowBox[{"MgO", "=", 
+     RowBox[{"<|", " ", 
+      RowBox[{
+       RowBox[{"\"\<name\>\"", "\[Rule]", " ", "\"\<MgO\>\""}], ",", 
+       RowBox[{"\"\<mass %\>\"", "\[Rule]", "  ", "38.73"}], ",", 
+       RowBox[{
+       "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", "\[Rule]", " ", 
+        
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox["12", "2"], "+", 
+          SuperscriptBox["8", "2"]}], ")"}]}], ",", 
+       RowBox[{"\"\<\[Sum] Z\>\"", "\[Rule]", " ", 
+        RowBox[{"(", 
+         RowBox[{"12", "+", "8"}], ")"}]}], ",", " ", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", " ", 
+        FractionBox[
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{
+          "\"\<(Molar Mass of MgO)\>\"", ",", "\"\<WolframResult\>\""}], 
+          "]"}], 
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{"\"\<(Molar Mass of H)\>\"", ",", "\"\<WolframResult\>\""}],
+           "]"}]]}]}], "|>"}]}], "  ", ";"}], "\n", 
+   RowBox[{
+    RowBox[{"CaO", " ", "=", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<name\>\"", "\[Rule]", " ", "\"\<CaO\>\""}], ",", " ", 
+       RowBox[{"\"\<mass %\>\"", "\[Rule]", "  ", "3.17"}], ",", 
+       RowBox[{
+       "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox["20", "2"], "+", 
+          SuperscriptBox["8", "2"]}], ")"}]}], " ", ",", 
+       RowBox[{"\"\<\[Sum] Z\>\"", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{"20", "+", "8"}], ")"}]}], " ", ",", " ", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", " ", 
+        FractionBox[
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{
+          "\"\<(Molar Mass of CaO)\>\"", ",", "\"\<WolframResult\>\""}], 
+          "]"}], 
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{"\"\<(Molar Mass of H)\>\"", ",", "\"\<WolframResult\>\""}],
+           "]"}]]}]}], "|>"}]}], " ", ";"}], "\n", 
+   RowBox[{
+    RowBox[{"Na2O", "=", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<name\>\"", "\[Rule]", " ", "\"\<Na2O\>\""}], ",", " ", 
+       RowBox[{"\"\<mass %\>\"", "\[Rule]", "  ", "0.13"}], ",", 
+       RowBox[{
+       "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", 
+           SuperscriptBox["11", "2"]}], "+", 
+          RowBox[{"2", " ", 
+           SuperscriptBox["8", "2"]}]}], ")"}]}], ",", 
+       RowBox[{"\"\<\[Sum] Z\>\"", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", "11"}], "+", 
+          RowBox[{"2", " ", "8"}]}], ")"}]}], "  ", ",", " ", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", " ", 
+        FractionBox[
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{
+          "\"\<(Molar Mass of Na2O)\>\"", ",", "\"\<WolframResult\>\""}], 
+          "]"}], 
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{"\"\<(Molar Mass of H)\>\"", ",", "\"\<WolframResult\>\""}],
+           "]"}]]}]}], "|>"}]}], "  ", ";"}], "\n", 
+   RowBox[{
+    RowBox[{"Cr2O3", " ", "=", 
+     RowBox[{"<|", " ", 
+      RowBox[{
+       RowBox[{"\"\<name\>\"", "\[Rule]", " ", "\"\<Cr2O3\>\""}], ",", 
+       RowBox[{"\"\<mass %\>\"", "\[Rule]", "  ", "0.57"}], ",", 
+       RowBox[{
+       "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", 
+           SuperscriptBox["24", "2"]}], "+", 
+          RowBox[{"3", " ", 
+           SuperscriptBox["8", "2"]}]}], ")"}]}], ",", 
+       RowBox[{"\"\<\[Sum] Z\>\"", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", "24"}], " ", "+", 
+          RowBox[{"3", "  ", "8"}]}], ")"}]}], " ", ",", " ", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", " ", 
+        FractionBox[
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{
+          "\"\<(Molar Mass of Cr2O3)\>\"", ",", "\"\<WolframResult\>\""}], 
+          "]"}], 
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{"\"\<(Molar Mass of H)\>\"", ",", "\"\<WolframResult\>\""}],
+           "]"}]]}]}], "|>"}]}], " ", ";"}], "\n", 
+   RowBox[{
+    RowBox[{"TiO2", " ", "=", 
+     RowBox[{"<|", " ", 
+      RowBox[{
+       RowBox[{"\"\<name\>\"", "\[Rule]", " ", "\"\<TiO2\>\""}], ",", 
+       RowBox[{"\"\<mass %\>\"", "\[Rule]", "  ", "0.13"}], ",", 
+       RowBox[{
+       "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", "\[Rule]", " ", 
+        
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox["22", "2"], "+", 
+          RowBox[{"2", " ", 
+           SuperscriptBox["8", "2"]}]}], ")"}]}], ",", 
+       RowBox[{"\"\<\[Sum] Z\>\"", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{"22", " ", "+", " ", 
+          RowBox[{"2", " ", "8"}]}], ")"}]}], ",", " ", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", " ", 
+        FractionBox[
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{
+          "\"\<(Molar Mass of TiO2)\>\"", ",", "\"\<WolframResult\>\""}], 
+          "]"}], 
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{"\"\<(Molar Mass of H)\>\"", ",", "\"\<WolframResult\>\""}],
+           "]"}]]}]}], "|>"}]}], " ", ";"}], "\n", 
+   RowBox[{
+    RowBox[{"NiO", " ", "=", 
+     RowBox[{"<|", " ", 
+      RowBox[{
+       RowBox[{"\"\<name\>\"", "\[Rule]", " ", "\"\<NiO\>\""}], ",", 
+       RowBox[{"\"\<mass %\>\"", "\[Rule]", "  ", "0.24"}], ",", 
+       RowBox[{
+       "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", "\[Rule]", " ", 
+        
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox["28", "2"], "+", 
+          SuperscriptBox["8", "2"]}], ")"}]}], ",", " ", 
+       RowBox[{"\"\<\[Sum] Z\>\"", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{"28", "+", "8"}], ")"}]}], ",", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", " ", 
+        FractionBox[
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{
+          "\"\<(Molar Mass of NiO)\>\"", ",", "\"\<WolframResult\>\""}], 
+          "]"}], 
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{"\"\<(Molar Mass of H)\>\"", ",", "\"\<WolframResult\>\""}],
+           "]"}]]}]}], "|>"}]}], " ", ";"}], "\n", 
+   RowBox[{
+    RowBox[{"K2O", " ", "=", 
+     RowBox[{"<|", " ", 
+      RowBox[{
+       RowBox[{"\"\<name\>\"", "\[Rule]", " ", "\"\<K2O\>\""}], ",", 
+       RowBox[{"\"\<mass %\>\"", "\[Rule]", "  ", "0.006"}], ",", 
+       RowBox[{
+       "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", "\[Rule]", " ", 
+        
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", 
+           SuperscriptBox["19", "2"]}], "+", 
+          SuperscriptBox["8", "2"]}], ")"}]}], ",", 
+       RowBox[{"\"\<\[Sum] Z\>\"", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", "19"}], "+", "8"}], ")"}]}], ",", " ", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", 
+        FractionBox[
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{
+          "\"\<(Molar Mass of K2O)\>\"", ",", "\"\<WolframResult\>\""}], 
+          "]"}], 
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{"\"\<(Molar Mass of H)\>\"", ",", "\"\<WolframResult\>\""}],
+           "]"}]]}]}], " ", "|>"}]}], " ", ";"}], "\n", 
+   RowBox[{
+    RowBox[{"P2O5", "=", 
+     RowBox[{"<|", " ", 
+      RowBox[{
+       RowBox[{"\"\<name\>\"", "\[Rule]", " ", "\"\<P2O5\>\""}], ",", 
+       RowBox[{"\"\<mass %\>\"", "\[Rule]", "  ", "0.019"}], ",", 
+       RowBox[{
+       "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", 
+           SuperscriptBox["15", "2"]}], "+", 
+          SuperscriptBox["8", "2"]}], ")"}]}], " ", ",", 
+       RowBox[{"\"\<\[Sum] Z\>\"", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", "15"}], "+", "8"}], ")"}]}], ",", " ", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", " ", 
+        FractionBox[
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{
+          "\"\<(Molar Mass of P2O5)\>\"", ",", "\"\<WolframResult\>\""}], 
+          "]"}], 
+         RowBox[{"WolframAlpha", "[", 
+          RowBox[{"\"\<(Molar Mass of H)\>\"", ",", "\"\<WolframResult\>\""}],
+           "]"}]]}]}], "|>"}]}], "  ", ";"}], "\n", 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.805644695330222*^9, 3.805644930816277*^9}, {
+   3.805645286625186*^9, 3.80564534383208*^9}, {3.8056453747417088`*^9, 
+   3.805645378591619*^9}, 3.805645522488676*^9, {3.8056458397505007`*^9, 
+   3.8056458544280853`*^9}, {3.805646277168848*^9, 3.805646309662286*^9}, {
+   3.805648633208437*^9, 3.805648820031426*^9}, {3.80564891419487*^9, 
+   3.805648921824832*^9}, 3.8056489753993464`*^9, {3.805649440988456*^9, 
+   3.805649543097643*^9}, 3.809057839125516*^9, 3.809081471356256*^9},
+ CellLabel->"In[7]:=",ExpressionUUID->"f7672095-a189-426f-bfd1-9f557e750aae"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"moleculesInMantle", "=", 
+    RowBox[{"{", 
+     RowBox[{
+     "SiO2", ",", "Al2O3", ",", "FeO", ",", "MnO", ",", "MgO", ",", "CaO", 
+      ",", "Na2O", ",", "Cr2O3", ",", "TiO2", ",", "NiO", ",", "K2O", ",", 
+      "P2O5"}], "}"}]}], ";"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.805645876725422*^9, 3.805645937333434*^9}, {
+   3.805646023046508*^9, 3.80564621534402*^9}, {3.8056462510370817`*^9, 
+   3.805646258941167*^9}, 3.805646324758843*^9},
+ CellLabel->"In[19]:=",ExpressionUUID->"ad66fc17-2cce-4dd8-85fe-4cb6b0e78fc9"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"newMoleInMant", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"ZZ", "=", 
+    RowBox[{"Sum", "[", 
+     RowBox[{
+      FractionBox[
+       RowBox[{"molecule", "[", "\"\<mass %\>\"", "]"}], 
+       RowBox[{"molecule", "[", "\"\<Mass\>\"", "]"}]], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{"molecule", ",", "moleculesInMantle"}], "}"}]}], "]"}]}], 
+   ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "supposed", " ", "to", " ", "be", " ", "like", " ", "partitioin", " ", 
+    "funciton", " ", "this", " ", "is", " ", "bad", " ", "notation"}], " ", 
+   "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.805647016182643*^9, 3.805647042764518*^9}, {
+  3.805648407103923*^9, 3.805648470590685*^9}, {3.805648936652885*^9, 
+  3.805648937224957*^9}, {3.809095520635435*^9, 3.809095531973138*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"17cd5e41-91aa-42cf-ac1c-3ea27d5e0f14"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Do", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"molecule", "[", "\"\<number %\>\"", "]"}], "=", 
+      RowBox[{
+       FractionBox["100", "ZZ"], 
+       FractionBox[
+        RowBox[{"molecule", "[", "\"\<mass %\>\"", "]"}], 
+        RowBox[{"molecule", "[", "\"\<Mass\>\"", "]"}]]}]}], ";", " ", 
+     "\[IndentingNewLine]", 
+     RowBox[{"AppendTo", "[", 
+      RowBox[{"newMoleInMant", ",", "molecule"}], "]"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"molecule", ",", "moleculesInMantle"}], "}"}]}], "]"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.805645940709003*^9, 3.805646021455557*^9}, {
+   3.805646448302928*^9, 3.805646508416707*^9}, {3.8056466936983757`*^9, 
+   3.805646773843129*^9}, {3.8056468883947887`*^9, 3.805647084247816*^9}, 
+   3.805647500520039*^9, {3.805648436774061*^9, 3.8056484398586407`*^9}, {
+   3.805648887046377*^9, 3.805648887873767*^9}, {3.805649626548806*^9, 
+   3.805649626675015*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"1decea21-e561-4ee6-bb17-3cb7c9694cc0"],
+
+Cell["\<\
+Both these number should be multiplied by the equivalent number of hydrogen \
+atoms per cubic centimeter to get proper densities. \
+\>", "Text",
+ CellChangeTimes->{{3.805649339561336*^9, 
+  3.8056493765039577`*^9}},ExpressionUUID->"7d33c667-630b-439c-ac1e-\
+a57604c3eb69"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Zeff", "=", 
+  RowBox[{
+   RowBox[{"Sum", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"molecule", "[", "\"\<number %\>\"", "]"}], " ", 
+      RowBox[{
+      "molecule", "[", "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", 
+       "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"molecule", ",", "newMoleInMant"}], "}"}]}], "]"}], "/", 
+   RowBox[{"Sum", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"molecule", "[", "\"\<number %\>\"", "]"}], " ", 
+      RowBox[{"molecule", "[", "\"\<\[Sum] Z\>\"", "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"molecule", ",", "newMoleInMant"}], "}"}]}], "]"}]}]}]], "Input",\
+
+ CellChangeTimes->{{3.805648474924253*^9, 3.805648507395934*^9}, {
+  3.8056485402590237`*^9, 3.805648602764653*^9}, {3.8056488381513233`*^9, 
+  3.8056488416663437`*^9}, {3.8086025482546988`*^9, 3.808602549696876*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"f3f209ae-96e7-4bb2-8b99-25c66b93527d"],
+
+Cell[BoxData[
+ FormBox["11.817567203365835`", TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.805648477785863*^9, {3.805648572317916*^9, 3.805648604009941*^9}, 
+   3.805648848519642*^9, 3.8056489406428537`*^9, 3.8056489971972923`*^9, 
+   3.8056495713921547`*^9, 3.805649633234353*^9, 3.808601752374991*^9, 
+   3.808602550044303*^9, 3.8090827737436857`*^9, 3.809094878031171*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"f25909d0-8ce7-48c9-98ae-515a75b9c5e5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Sum", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", "100"], 
+    RowBox[{"molecule", "[", "\"\<number %\>\"", "]"}], " ", 
+    RowBox[{"molecule", "[", "\"\<\[Sum] Z\>\"", "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"molecule", ",", "newMoleInMant"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.805649269558745*^9, 3.805649272293745*^9}, {
+  3.805649638886895*^9, 3.805649641101054*^9}},
+ CellLabel->
+  "In[944]:=",ExpressionUUID->"2713f46b-1228-4664-8079-5428eacdc0f5"],
+
+Cell[BoxData[
+ FormBox["25.210812504982915`", TraditionalForm]], "Output",
+ CellChangeTimes->{3.808601841974045*^9},
+ CellLabel->
+  "Out[944]=",ExpressionUUID->"9799d8e0-dffa-454b-80e3-fd6469672020"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"\[Rho]Ref", "=", "4"}], 
+   RowBox[{"(*", 
+    RowBox[{"g", " ", "/", 
+     SuperscriptBox["cm", "3"]}], "*)"}], " ", ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"nBar", "=", 
+  RowBox[{
+   RowBox[{"Sum", "[", " ", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       RowBox[{"molecule", "[", "\"\<mass %\>\"", "]"}], "100"], "*", 
+      FractionBox["\[Rho]Ref", 
+       RowBox[{"molecule", "[", "\"\<Mass\>\"", "]"}]], "*", "6.02", " ", 
+      SuperscriptBox["10", "23"], "*", 
+      RowBox[{
+      "molecule", "[", "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", 
+       "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"molecule", ",", "newMoleInMant"}], "}"}]}], "]"}], "/", 
+   SuperscriptBox["Zeff", "2"]}]}]}], "Input",
+ CellChangeTimes->{{3.808602005586862*^9, 3.808602098192978*^9}, {
+   3.808602143938156*^9, 3.808602279194153*^9}, {3.808602313659253*^9, 
+   3.8086024823946466`*^9}, {3.8086025415038757`*^9, 
+   3.8086026064345703`*^9}, {3.808602690063004*^9, 3.808602690427804*^9}, {
+   3.808605278781489*^9, 3.80860527929915*^9}, {3.808607488761394*^9, 
+   3.808607488917336*^9}, 3.809094838302085*^9},
+ CellLabel->"In[24]:=",ExpressionUUID->"7adede9d-9a8d-4b64-ab20-efbc4309e07c"],
+
+Cell[BoxData[
+ FormBox["9.781120331215173`*^22", TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.80860186958764*^9, {3.8086020094905*^9, 3.808602023743557*^9}, {
+   3.808602091225917*^9, 3.8086020987546253`*^9}, {3.808602167295117*^9, 
+   3.808602190018347*^9}, {3.808602250018498*^9, 3.8086022798365393`*^9}, 
+   3.808602343685438*^9, {3.8086023894280357`*^9, 3.8086024829419394`*^9}, {
+   3.808602556494782*^9, 3.808602606914214*^9}, 3.8086026908965197`*^9, 
+   3.808605286097106*^9, 3.808607489297235*^9, 3.809058724907633*^9, 
+   3.809082769498913*^9, 3.809094908269088*^9},
+ CellLabel->"Out[25]=",ExpressionUUID->"8b278b8c-4ac3-4660-9159-7efc1667a916"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Do", "[", 
+  RowBox[{
+   RowBox[{"Print", "[", 
+    RowBox[{
+     RowBox[{"molecule", "[", "\"\<name\>\"", "]"}], ",", " ", "\"\< & \>\"", 
+     ",", 
+     RowBox[{
+      RowBox[{"Evaluate", "[", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"\[Rho]Ref", " ", 
+          RowBox[{
+           RowBox[{"molecule", "[", "\"\<mass %\>\"", "]"}], "/", "100"}]}], 
+         RowBox[{
+          RowBox[{"molecule", "[", "\"\<Mass\>\"", "]"}], " "}]], 
+        FractionBox[
+         RowBox[{"6.02", " ", 
+          SuperscriptBox["10", "23"]}], 
+         SuperscriptBox["10", "22"]]}], "]"}], "\"\< &  \>\""}], ",", 
+     RowBox[{
+     "molecule", "[", "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", 
+      "]"}], " ", ",", " ", "\"\< \\\\ \\\\ \>\""}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"molecule", ",", "newMoleInMant"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.809057806424268*^9, 3.809057967104074*^9}, {
+   3.809058006084981*^9, 3.8090581923320093`*^9}, {3.809058733300765*^9, 
+   3.809058744193914*^9}, {3.809081676077713*^9, 3.809081693794833*^9}, {
+   3.80908200660328*^9, 3.8090820224104958`*^9}, {3.809082055831729*^9, 
+   3.8090821256156054`*^9}, 3.809094838321035*^9},
+ CellLabel->"In[26]:=",ExpressionUUID->"2149afee-cc85-4ed8-bfbb-35e455b4afd0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"SiO2\"\>", "\[InvisibleSpace]", "\<\" & \"\>", 
+    "\[InvisibleSpace]", 
+    RowBox[{"1.8062176229549123`", " ", "\<\" &  \"\>"}], "\[InvisibleSpace]",
+     "324", "\[InvisibleSpace]", "\<\" \\\\ \\\\ \"\>"}],
+   SequenceForm["SiO2", " & ", 1.8062176229549123` " &  ", 324, " \\ \\ "],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{{3.809058183056148*^9, 3.809058192843348*^9}, {
+   3.8090587364521713`*^9, 3.8090587452486753`*^9}, {3.809081687630622*^9, 
+   3.809081694358575*^9}, {3.809082056820526*^9, 3.8090821264393253`*^9}, 
+   3.809094957867095*^9},
+ CellLabel->
+  "During evaluation of \
+In[26]:=",ExpressionUUID->"a3b80053-6c88-4d68-a1e5-acd96dfcc1ff"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Al2O3\"\>", "\[InvisibleSpace]", "\<\" & \"\>", 
+    "\[InvisibleSpace]", 
+    RowBox[{"0.0017637512671682066`", " ", "\<\" &  \"\>"}], 
+    "\[InvisibleSpace]", "530", "\[InvisibleSpace]", "\<\" \\\\ \\\\ \"\>"}],
+   SequenceForm["Al2O3", " & ", 0.0017637512671682066` " &  ", 530, " \\ \\ "],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{{3.809058183056148*^9, 3.809058192843348*^9}, {
+   3.8090587364521713`*^9, 3.8090587452486753`*^9}, {3.809081687630622*^9, 
+   3.809081694358575*^9}, {3.809082056820526*^9, 3.8090821264393253`*^9}, 
+   3.809094957881126*^9},
+ CellLabel->
+  "During evaluation of \
+In[26]:=",ExpressionUUID->"3ec2f39a-5476-416e-8f63-04101424ae9a"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"FeO\"\>", "\[InvisibleSpace]", "\<\" & \"\>", 
+    "\[InvisibleSpace]", 
+    RowBox[{"0.27636294638383163`", " ", "\<\" &  \"\>"}], 
+    "\[InvisibleSpace]", "740", "\[InvisibleSpace]", "\<\" \\\\ \\\\ \"\>"}],
+   SequenceForm["FeO", " & ", 0.27636294638383163` " &  ", 740, " \\ \\ "],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{{3.809058183056148*^9, 3.809058192843348*^9}, {
+   3.8090587364521713`*^9, 3.8090587452486753`*^9}, {3.809081687630622*^9, 
+   3.809081694358575*^9}, {3.809082056820526*^9, 3.8090821264393253`*^9}, 
+   3.809094957894206*^9},
+ CellLabel->
+  "During evaluation of \
+In[26]:=",ExpressionUUID->"e040f3a3-7b14-4fa1-9747-c0038ff7f7f7"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"MnO\"\>", "\[InvisibleSpace]", "\<\" & \"\>", 
+    "\[InvisibleSpace]", 
+    RowBox[{"0.004448233221027108`", " ", "\<\" &  \"\>"}], 
+    "\[InvisibleSpace]", "689", "\[InvisibleSpace]", "\<\" \\\\ \\\\ \"\>"}],
+   SequenceForm["MnO", " & ", 0.004448233221027108 " &  ", 689, " \\ \\ "],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{{3.809058183056148*^9, 3.809058192843348*^9}, {
+   3.8090587364521713`*^9, 3.8090587452486753`*^9}, {3.809081687630622*^9, 
+   3.809081694358575*^9}, {3.809082056820526*^9, 3.8090821264393253`*^9}, 
+   3.8090949579009027`*^9},
+ CellLabel->
+  "During evaluation of \
+In[26]:=",ExpressionUUID->"46064772-fe64-4edc-a455-56c8939f4816"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"MgO\"\>", "\[InvisibleSpace]", "\<\" & \"\>", 
+    "\[InvisibleSpace]", 
+    RowBox[{"2.332471583961889`", " ", "\<\" &  \"\>"}], "\[InvisibleSpace]", 
+    "208", "\[InvisibleSpace]", "\<\" \\\\ \\\\ \"\>"}],
+   SequenceForm["MgO", " & ", 2.332471583961889 " &  ", 208, " \\ \\ "],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{{3.809058183056148*^9, 3.809058192843348*^9}, {
+   3.8090587364521713`*^9, 3.8090587452486753`*^9}, {3.809081687630622*^9, 
+   3.809081694358575*^9}, {3.809082056820526*^9, 3.8090821264393253`*^9}, 
+   3.809094957913477*^9},
+ CellLabel->
+  "During evaluation of \
+In[26]:=",ExpressionUUID->"50955b53-2061-4cd7-8625-ccb1df8ee056"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"CaO\"\>", "\[InvisibleSpace]", "\<\" & \"\>", 
+    "\[InvisibleSpace]", 
+    RowBox[{"0.13721181375608538`", " ", "\<\" &  \"\>"}], 
+    "\[InvisibleSpace]", "464", "\[InvisibleSpace]", "\<\" \\\\ \\\\ \"\>"}],
+   SequenceForm["CaO", " & ", 0.13721181375608538` " &  ", 464, " \\ \\ "],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{{3.809058183056148*^9, 3.809058192843348*^9}, {
+   3.8090587364521713`*^9, 3.8090587452486753`*^9}, {3.809081687630622*^9, 
+   3.809081694358575*^9}, {3.809082056820526*^9, 3.8090821264393253`*^9}, 
+   3.809094957923984*^9},
+ CellLabel->
+  "During evaluation of \
+In[26]:=",ExpressionUUID->"1c28db81-19c8-4379-9bfd-1959b6b69963"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Na2O\"\>", "\[InvisibleSpace]", "\<\" & \"\>", 
+    "\[InvisibleSpace]", 
+    RowBox[{"0.005091148937543362`", " ", "\<\" &  \"\>"}], 
+    "\[InvisibleSpace]", "370", "\[InvisibleSpace]", "\<\" \\\\ \\\\ \"\>"}],
+   SequenceForm["Na2O", " & ", 0.005091148937543362 " &  ", 370, " \\ \\ "],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{{3.809058183056148*^9, 3.809058192843348*^9}, {
+   3.8090587364521713`*^9, 3.8090587452486753`*^9}, {3.809081687630622*^9, 
+   3.809081694358575*^9}, {3.809082056820526*^9, 3.8090821264393253`*^9}, 
+   3.809094957932191*^9},
+ CellLabel->
+  "During evaluation of \
+In[26]:=",ExpressionUUID->"817bf869-7f55-454c-a580-f1763d7fce0a"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"Cr2O3\"\>", "\[InvisibleSpace]", "\<\" & \"\>", 
+    "\[InvisibleSpace]", 
+    RowBox[{"0.00910283887097835`", " ", "\<\" &  \"\>"}], 
+    "\[InvisibleSpace]", "1344", "\[InvisibleSpace]", "\<\" \\\\ \\\\ \"\>"}],
+   
+   SequenceForm["Cr2O3", " & ", 0.00910283887097835 " &  ", 1344, " \\ \\ "],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{{3.809058183056148*^9, 3.809058192843348*^9}, {
+   3.8090587364521713`*^9, 3.8090587452486753`*^9}, {3.809081687630622*^9, 
+   3.809081694358575*^9}, {3.809082056820526*^9, 3.8090821264393253`*^9}, 
+   3.809094957940957*^9},
+ CellLabel->
+  "During evaluation of \
+In[26]:=",ExpressionUUID->"f5785920-5b96-49d7-b2de-a5102864e406"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"TiO2\"\>", "\[InvisibleSpace]", "\<\" & \"\>", 
+    "\[InvisibleSpace]", 
+    RowBox[{"0.003950971264008014`", " ", "\<\" &  \"\>"}], 
+    "\[InvisibleSpace]", "612", "\[InvisibleSpace]", "\<\" \\\\ \\\\ \"\>"}],
+   SequenceForm["TiO2", " & ", 0.003950971264008014 " &  ", 612, " \\ \\ "],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{{3.809058183056148*^9, 3.809058192843348*^9}, {
+   3.8090587364521713`*^9, 3.8090587452486753`*^9}, {3.809081687630622*^9, 
+   3.809081694358575*^9}, {3.809082056820526*^9, 3.8090821264393253`*^9}, 
+   3.809094957949511*^9},
+ CellLabel->
+  "During evaluation of \
+In[26]:=",ExpressionUUID->"8242de91-7eeb-4350-be6e-b84a11049b9b"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"NiO\"\>", "\[InvisibleSpace]", "\<\" & \"\>", 
+    "\[InvisibleSpace]", 
+    RowBox[{"0.007799273817811813`", " ", "\<\" &  \"\>"}], 
+    "\[InvisibleSpace]", "848", "\[InvisibleSpace]", "\<\" \\\\ \\\\ \"\>"}],
+   SequenceForm["NiO", " & ", 0.007799273817811813 " &  ", 848, " \\ \\ "],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{{3.809058183056148*^9, 3.809058192843348*^9}, {
+   3.8090587364521713`*^9, 3.8090587452486753`*^9}, {3.809081687630622*^9, 
+   3.809081694358575*^9}, {3.809082056820526*^9, 3.8090821264393253`*^9}, 
+   3.8090949579575853`*^9},
+ CellLabel->
+  "During evaluation of \
+In[26]:=",ExpressionUUID->"ac6f55c8-a287-4f5d-a0d4-ce99bff4a05a"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"K2O\"\>", "\[InvisibleSpace]", "\<\" & \"\>", 
+    "\[InvisibleSpace]", 
+    RowBox[{"0.00015460936770138857`", " ", "\<\" &  \"\>"}], 
+    "\[InvisibleSpace]", "786", "\[InvisibleSpace]", "\<\" \\\\ \\\\ \"\>"}],
+   SequenceForm["K2O", " & ", 0.00015460936770138857` " &  ", 786, " \\ \\ "],
+   
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{{3.809058183056148*^9, 3.809058192843348*^9}, {
+   3.8090587364521713`*^9, 3.8090587452486753`*^9}, {3.809081687630622*^9, 
+   3.809081694358575*^9}, {3.809082056820526*^9, 3.8090821264393253`*^9}, 
+   3.809094957968535*^9},
+ CellLabel->
+  "During evaluation of \
+In[26]:=",ExpressionUUID->"f672ffdc-b0a6-412c-b01a-7fbc0f7c6e0c"],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox[
+   RowBox[{"\<\"P2O5\"\>", "\[InvisibleSpace]", "\<\" & \"\>", 
+    "\[InvisibleSpace]", 
+    RowBox[{"0.0003249120473439481`", " ", "\<\" &  \"\>"}], 
+    "\[InvisibleSpace]", "514", "\[InvisibleSpace]", "\<\" \\\\ \\\\ \"\>"}],
+   SequenceForm["P2O5", " & ", 0.0003249120473439481 " &  ", 514, " \\ \\ "],
+   Editable->False], TraditionalForm]], "Print",
+ CellChangeTimes->{{3.809058183056148*^9, 3.809058192843348*^9}, {
+   3.8090587364521713`*^9, 3.8090587452486753`*^9}, {3.809081687630622*^9, 
+   3.809081694358575*^9}, {3.809082056820526*^9, 3.8090821264393253`*^9}, 
+   3.809094957975815*^9},
+ CellLabel->
+  "During evaluation of \
+In[26]:=",ExpressionUUID->"b233c51a-9610-42e6-b62d-2218de420022"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.809082222880084*^9, 
+  3.809082240967822*^9}},ExpressionUUID->"4f025d82-71eb-4f0b-b201-\
+c66f65c094d0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"molecule", "[", "\"\<name\>\"", "]"}], ",", 
+     RowBox[{"6.02", " ", "10", 
+      FractionBox[
+       RowBox[{"\[Rho]Ref", " ", 
+        RowBox[{
+         RowBox[{"molecule", "[", "\"\<mass %\>\"", "]"}], "/", "100"}]}], 
+       RowBox[{
+        RowBox[{"molecule", "[", "\"\<Mass\>\"", "]"}], " "}]]}], ",", " ", 
+     RowBox[{
+     "molecule", "[", "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"", 
+      "]"}], ",", 
+     RowBox[{"6.02", " ", "10", 
+      FractionBox[
+       RowBox[{"\[Rho]Ref", " ", 
+        RowBox[{
+         RowBox[{"molecule", "[", "\"\<mass %\>\"", "]"}], "/", "100"}]}], 
+       RowBox[{
+        RowBox[{"molecule", "[", "\"\<Mass\>\"", "]"}], " "}]], " ", 
+      RowBox[{
+       RowBox[{
+       "molecule", "[", "\"\<\[Sum] \!\(\*SuperscriptBox[\(Z\), \(2\)]\)\>\"",
+         "]"}], "/", "100"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"molecule", ",", "newMoleInMant"}], "}"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SortBy", "[", 
+  RowBox[{"%", ",", "Last"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.80908280567655*^9, 3.80908281829985*^9}, {
+  3.809082857467538*^9, 3.8090829127700663`*^9}, {3.8090829440813828`*^9, 
+  3.809082950776374*^9}, {3.8090837015495987`*^9, 3.80908370237197*^9}, {
+  3.809083879868738*^9, 3.809083886396716*^9}, {3.80909483833106*^9, 
+  3.8090948383360147`*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"8520c6fa-b7a4-46b6-a1d0-81f3482c8284"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"\<\"SiO2\"\>", "1.8062176229549123`", "324", "5.852145098373916`"},
+     {"\<\"Al2O3\"\>", "0.0017637512671682066`", "530", 
+      "0.009347881715991494`"},
+     {"\<\"FeO\"\>", "0.27636294638383163`", "740", "2.045085803240354`"},
+     {"\<\"MnO\"\>", "0.004448233221027108`", "689", 
+      "0.030648326892876776`"},
+     {"\<\"MgO\"\>", "2.332471583961889`", "208", "4.8515408946407295`"},
+     {"\<\"CaO\"\>", "0.13721181375608538`", "464", "0.6366628158282361`"},
+     {"\<\"Na2O\"\>", "0.005091148937543362`", "370", "0.018837251068910436`"},
+     {"\<\"Cr2O3\"\>", "0.00910283887097835`", "1344", "0.12234215442594903`"},
+     {"\<\"TiO2\"\>", "0.003950971264008014`", "612", "0.024179944135729048`"},
+     {"\<\"NiO\"\>", "0.007799273817811813`", "848", "0.06613784197504419`"},
+     {"\<\"K2O\"\>", "0.00015460936770138857`", "786", 
+      "0.0012152296301329141`"},
+     {"\<\"P2O5\"\>", "0.0003249120473439481`", "514", 
+      "0.0016700479233478932`"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{{3.809082806936426*^9, 3.8090828205782757`*^9}, 
+   3.809082861348522*^9, 3.809082913656377*^9, 3.809082951527261*^9, 
+   3.8090837029996567`*^9, 3.809083886944304*^9, 3.80909523909558*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"1743813a-c39e-4180-958e-28e930e5cec0"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"\<\"K2O\"\>", "0.00015460936770138857`", "786", 
+      "0.0012152296301329141`"},
+     {"\<\"P2O5\"\>", "0.0003249120473439481`", "514", 
+      "0.0016700479233478932`"},
+     {"\<\"Al2O3\"\>", "0.0017637512671682066`", "530", 
+      "0.009347881715991494`"},
+     {"\<\"Na2O\"\>", "0.005091148937543362`", "370", "0.018837251068910436`"},
+     {"\<\"TiO2\"\>", "0.003950971264008014`", "612", "0.024179944135729048`"},
+     {"\<\"MnO\"\>", "0.004448233221027108`", "689", 
+      "0.030648326892876776`"},
+     {"\<\"NiO\"\>", "0.007799273817811813`", "848", "0.06613784197504419`"},
+     {"\<\"Cr2O3\"\>", "0.00910283887097835`", "1344", "0.12234215442594903`"},
+     {"\<\"CaO\"\>", "0.13721181375608538`", "464", "0.6366628158282361`"},
+     {"\<\"FeO\"\>", "0.27636294638383163`", "740", "2.045085803240354`"},
+     {"\<\"MgO\"\>", "2.332471583961889`", "208", "4.8515408946407295`"},
+     {"\<\"SiO2\"\>", "1.8062176229549123`", "324", "5.852145098373916`"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{{3.809082806936426*^9, 3.8090828205782757`*^9}, 
+   3.809082861348522*^9, 3.809082913656377*^9, 3.809082951527261*^9, 
+   3.8090837029996567`*^9, 3.809083886944304*^9, 3.809095239127615*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"6268f95d-e80f-4e99-88c2-63747ffa6428"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"mFe", "=", 
+   FractionBox[
+    RowBox[{"WolframAlpha", "[", 
+     RowBox[{"\"\<(Molar Mass of Fe)\>\"", ",", "\"\<WolframResult\>\""}], 
+     "]"}], 
+    RowBox[{"WolframAlpha", "[", 
+     RowBox[{"\"\<(Molar Mass of H)\>\"", ",", "\"\<WolframResult\>\""}], 
+     "]"}]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mO", "=", 
+   FractionBox[
+    RowBox[{"WolframAlpha", "[", 
+     RowBox[{"\"\<(Molar Mass of O)\>\"", ",", "\"\<WolframResult\>\""}], 
+     "]"}], 
+    RowBox[{"WolframAlpha", "[", 
+     RowBox[{"\"\<(Molar Mass of H)\>\"", ",", "\"\<WolframResult\>\""}], 
+     "]"}]]}], ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.809094767269742*^9, 3.809094805780398*^9}, 
+   3.8090955667834787`*^9},ExpressionUUID->"56882b10-1314-4a07-8d87-\
+3cebfbebf680"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ FractionBox[
+  RowBox[{
+   RowBox[{
+    FractionBox[
+     RowBox[{"13", " ", "0.9", " "}], "mFe"], "6.02", " ", 
+    SuperscriptBox["10", "23"], " ", 
+    SuperscriptBox["26", "2"]}], " ", "+", " ", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"13", " ", "0.1", " "}], "mO"], "6.02", " ", 
+    SuperscriptBox["10", "23"], " ", 
+    SuperscriptBox["8", "2"]}]}], 
+  RowBox[{
+   RowBox[{
+    FractionBox[
+     RowBox[{"13", " ", "0.9", " "}], "mFe"], "6.02", " ", 
+    SuperscriptBox["10", "23"], " ", "26"}], " ", "+", " ", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"13", " ", "0.1", " "}], "mO"], "6.02", " ", 
+    SuperscriptBox["10", "23"], " ", "8"}]}]], "\[IndentingNewLine]", 
+ FractionBox[
+  RowBox[{
+   RowBox[{
+    FractionBox[
+     RowBox[{"13", " ", "0.9", " "}], "mFe"], "6.02", " ", 
+    SuperscriptBox["10", "23"], " ", 
+    SuperscriptBox["26", "2"]}], " ", "+", " ", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"13", " ", "0.1", " "}], "mO"], "6.02", " ", 
+    SuperscriptBox["10", "23"], " ", 
+    SuperscriptBox["8", "2"]}]}], 
+  SuperscriptBox["%", "2"]], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.8090956717659197`*^9, 3.8090957379616957`*^9}, {
+  3.809095949100813*^9, 3.809095999671832*^9}, {3.809096131527988*^9, 
+  3.809096132150481*^9}},
+ CellLabel->"In[43]:=",ExpressionUUID->"3b7c1dd1-3102-45be-a79d-e8440664562e"],
+
+Cell[BoxData[
+ FormBox["24.080985537376456`", TraditionalForm]], "Output",
+ CellChangeTimes->{3.809095999966745*^9, 3.809096133298401*^9},
+ CellLabel->"Out[43]=",ExpressionUUID->"dc5e20c1-f0e0-4f13-8840-8d8fcbe5205c"],
+
+Cell[BoxData[
+ FormBox["1.5364467909499294`*^23", TraditionalForm]], "Output",
+ CellChangeTimes->{3.809095999966745*^9, 3.809096133316517*^9},
+ CellLabel->"Out[44]=",ExpressionUUID->"5312be47-6eba-4e9a-97f1-6c7d6d0f6e56"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"0.97", " ", 
+      SuperscriptBox["11.8", "2"]}], ")"}], "0.8"}], " ", "+", " ", 
+   RowBox[{"0.2", " ", 
+    RowBox[{"(", 
+     RowBox[{"1.54", " ", 
+      SuperscriptBox["24.1", "2"]}], ")"}]}]}], 
+  RowBox[{"0.97", " ", 
+   SuperscriptBox["11.8", "2"]}]]], "Input",
+ CellChangeTimes->{{3.8090962758866873`*^9, 3.809096305415387*^9}, {
+  3.809096336652234*^9, 3.80909634363638*^9}, {3.809096907685755*^9, 
+  3.809096908607669*^9}},
+ CellLabel->"In[46]:=",ExpressionUUID->"9d0a8f1c-76b3-4e89-8cea-4c8c68b47fbb"],
+
+Cell[BoxData[
+ FormBox["2.1244911256097168`", TraditionalForm]], "Output",
+ CellChangeTimes->{3.8090963444303503`*^9, 3.809096909158947*^9},
+ CellLabel->"Out[46]=",ExpressionUUID->"4371d78f-3828-4e50-88b5-8f9dd906e4b0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8090959965117607`*^9, 
+  3.809095998131345*^9}},ExpressionUUID->"acc3bba3-a67d-46d2-b532-\
+bdf0d19fc5f9"],
+
+Cell[BoxData[
+ FormBox["24.080985537376456`", TraditionalForm]], "Output",
+ CellChangeTimes->{{3.809095697766938*^9, 3.8090957383292437`*^9}, {
+   3.8090959295945177`*^9, 3.809095952659275*^9}, 3.809095985286338*^9},
+ CellLabel->"Out[40]=",ExpressionUUID->"a6909514-6935-4cea-bf9a-cd7d70798374"]
+}, Open  ]]
+},
+WindowSize->{630, 723},
+WindowMargins->{{125, Automatic}, {Automatic, 0}},
+WindowStatusArea->None,
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 826, 24, 73, "Input",ExpressionUUID->"db5f42d3-ec03-4fee-9dc4-5c1579f23048"],
+Cell[1387, 46, 12976, 325, 1402, "Input",ExpressionUUID->"f7672095-a189-426f-bfd1-9f557e750aae"],
+Cell[14366, 373, 591, 12, 73, "Input",ExpressionUUID->"ad66fc17-2cce-4dd8-85fe-4cb6b0e78fc9"],
+Cell[14960, 387, 949, 23, 116, "Input",ExpressionUUID->"17cd5e41-91aa-42cf-ac1c-3ea27d5e0f14"],
+Cell[15912, 412, 1090, 24, 122, "Input",ExpressionUUID->"1decea21-e561-4ee6-bb17-3cb7c9694cc0"],
+Cell[17005, 438, 282, 6, 58, "Text",ExpressionUUID->"7d33c667-630b-439c-ac1e-a57604c3eb69"],
+Cell[CellGroupData[{
+Cell[17312, 448, 948, 23, 98, "Input",ExpressionUUID->"f3f209ae-96e7-4bb2-8b99-25c66b93527d"],
+Cell[18263, 473, 462, 7, 30, "Output",ExpressionUUID->"f25909d0-8ce7-48c9-98ae-515a75b9c5e5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18762, 485, 503, 12, 76, "Input",ExpressionUUID->"2713f46b-1228-4664-8079-5428eacdc0f5"],
+Cell[19268, 499, 199, 4, 30, "Output",ExpressionUUID->"9799d8e0-dffa-454b-80e3-fd6469672020"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19504, 508, 1273, 30, 151, "Input",ExpressionUUID->"7adede9d-9a8d-4b64-ab20-efbc4309e07c"],
+Cell[20780, 540, 662, 10, 35, "Output",ExpressionUUID->"8b278b8c-4ac3-4660-9159-7efc1667a916"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21479, 555, 1306, 30, 111, "Input",ExpressionUUID->"2149afee-cc85-4ed8-bfbb-35e455b4afd0"],
+Cell[CellGroupData[{
+Cell[22810, 589, 745, 15, 20, "Print",ExpressionUUID->"a3b80053-6c88-4d68-a1e5-acd96dfcc1ff"],
+Cell[23558, 606, 753, 15, 20, "Print",ExpressionUUID->"3ec2f39a-5476-416e-8f63-04101424ae9a"],
+Cell[24314, 623, 745, 15, 20, "Print",ExpressionUUID->"e040f3a3-7b14-4fa1-9747-c0038ff7f7f7"],
+Cell[25062, 640, 748, 15, 20, "Print",ExpressionUUID->"46064772-fe64-4edc-a455-56c8939f4816"],
+Cell[25813, 657, 740, 15, 20, "Print",ExpressionUUID->"50955b53-2061-4cd7-8625-ccb1df8ee056"],
+Cell[26556, 674, 745, 15, 20, "Print",ExpressionUUID->"1c28db81-19c8-4379-9bfd-1959b6b69963"],
+Cell[27304, 691, 748, 15, 20, "Print",ExpressionUUID->"817bf869-7f55-454c-a580-f1763d7fce0a"],
+Cell[28055, 708, 754, 16, 20, "Print",ExpressionUUID->"f5785920-5b96-49d7-b2de-a5102864e406"],
+Cell[28812, 726, 748, 15, 20, "Print",ExpressionUUID->"8242de91-7eeb-4350-be6e-b84a11049b9b"],
+Cell[29563, 743, 748, 15, 20, "Print",ExpressionUUID->"ac6f55c8-a287-4f5d-a0d4-ce99bff4a05a"],
+Cell[30314, 760, 755, 16, 20, "Print",ExpressionUUID->"f672ffdc-b0a6-412c-b01a-7fbc0f7c6e0c"],
+Cell[31072, 778, 750, 15, 20, "Print",ExpressionUUID->"b233c51a-9610-42e6-b62d-2218de420022"]
+}, Open  ]]
+}, Open  ]],
+Cell[31849, 797, 152, 3, 30, "Input",ExpressionUUID->"4f025d82-71eb-4f0b-b201-c66f65c094d0"],
+Cell[CellGroupData[{
+Cell[32026, 804, 1515, 37, 144, "Input",ExpressionUUID->"8520c6fa-b7a4-46b6-a1d0-81f3482c8284"],
+Cell[33544, 843, 1779, 34, 218, "Output",ExpressionUUID->"1743813a-c39e-4180-958e-28e930e5cec0"],
+Cell[35326, 879, 1780, 34, 218, "Output",ExpressionUUID->"6268f95d-e80f-4e99-88c2-63747ffa6428"]
+}, Open  ]],
+Cell[37121, 916, 827, 21, 118, "Input",ExpressionUUID->"56882b10-1314-4a07-8d87-3cebfbebf680"],
+Cell[CellGroupData[{
+Cell[37973, 941, 1368, 38, 140, "Input",ExpressionUUID->"3b7c1dd1-3102-45be-a79d-e8440664562e"],
+Cell[39344, 981, 217, 3, 30, "Output",ExpressionUUID->"dc5e20c1-f0e0-4f13-8840-8d8fcbe5205c"],
+Cell[39564, 986, 221, 3, 35, "Output",ExpressionUUID->"5312be47-6eba-4e9a-97f1-6c7d6d0f6e56"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39822, 994, 595, 16, 54, "Input",ExpressionUUID->"9d0a8f1c-76b3-4e89-8cea-4c8c68b47fbb"],
+Cell[40420, 1012, 219, 3, 30, "Output",ExpressionUUID->"4371d78f-3828-4e50-88b5-8f9dd906e4b0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40676, 1020, 154, 3, 30, "Input",ExpressionUUID->"acc3bba3-a67d-46d2-b532-bdf0d19fc5f9"],
+Cell[40833, 1025, 295, 4, 30, "Output",ExpressionUUID->"a6909514-6935-4cea-bf9a-cd7d70798374"]
+}, Open  ]]
+}
+]
+*)
+

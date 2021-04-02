@@ -1,0 +1,138 @@
+#####
+#  Upscattered neutrinos via dipole portal 
+#
+#  Author: Ryan Plestid
+#  Date:   March 10th 2021
+#
+#  Assoc. Pub.:   arXiv:2010.04193
+#
+#
+
+
+This folder contains 9 Mathematica notebooks, and 10 Subdirectories. The Mathematica notebooks are "stand alone", but require certain input files genrated by other notebooks. If you were to run everything from scratch the order would be
+
+### Notebooks 
+
+
+1) 3d-chord.nb
+
+   Generates necessary geometric quantities related to the Earth for Borexino
+   and Super Kamiokande. Outputs these files to Earth-Geo/
+  
+
+2) Solar-Neutrino-Fluxes-Dipole.nb
+
+   This notebook reads in the solar neutrino flux components from SolarNuFlux/
+   and uses this to calculate various fluxes that are used in later notebooks.
+   This includes a weighting by oscillation/survival probabilities for flavor
+   dependent processes and fluxes for the \lambda >> R_earth  (GG) and
+   \lambda << R_earth limits.
+
+   All of these different output files are stored in N-Specs/
+
+3) Borexino-Data.nb
+
+   This notebook pulls data from BorexinoData/ which is taken from Borexino's
+   online repository https://bxopen.lngs.infn.it/
+
+   It also relies on the data in N-Specs/
+
+
+3) Majorana-Dirac.nb
+
+   This notebook compares the shape of the \alpha=0 and \alpha=-1 spectra to
+   demonstrate that it may be possible to test the Majorana nature of a
+   heavy-N if it were discovered via its photon decay.
+
+   This notebook is dependent on the LL and GG files in N-Specs/
+
+4) Analytics-Guess-Excl-Limits.nb
+
+   This notebook relies on the LL and GG fluxes in N-Specs/ as well as
+   the L-Avg files in Earth-Geo/
+
+   Using these as inputs estimates of the sensitivity in the d-m_N plane
+   are made for each experiment. These are output to the folder Guess-Curves/
+   which is later used as an initial guess for a full numerical evaluation of
+   the sensitivity. 
+
+5) Full-Limits.nb
+
+   This notebook relies on the files in Earth-Geo/ Guess-Curves/ and N-Specs/
+   and so by extension on most of the notebooks above.
+
+   This notebook finds the value of d that will reproduce a rate of 60
+   events/day in LER-I, 17 events/day in LER-II, and 4.62 events/day in SK. 
+
+   These exclusion curves are stored as an Assosciation (i.e. Mathematica's
+   equivalent of a Dictonary). They are used in subsequent plotting notebooks.
+
+   
+6) Plots.nb
+
+   This notebook relies on the exclusion curves in Exclusion-Curves/ produced
+   by Full-Limits.nb.
+
+7) Comparison-Plot.nb
+
+   This notebook pullsfrom Exisiting-Limits/ and Exclusion-Curves/ to produce
+   a muon-flavor-only dipole portal sensitivity plot.
+
+
+In addition to these "ordered" notebooks, the following notebooks do not have any dependecy on other notebooks
+
+
+a) Average-Earth-Material.nb
+
+   This notebook queries Woflram Alpha to automatically sort out average
+   properties of the Earth's mantle relevant for neutrino upscattering.
+
+Each notebook is described below including the files it pulls from.
+
+
+### Directories
+
+
+1) BorexinoData/
+
+   Contains data on Borexino experiment from online repsoitory. 
+
+2) SK-Data/
+
+   Contains data form SK experiment from
+   https:::arxiv.org:pdf:1606.07538.pdf-fig14
+
+3) EarthGeo/
+
+   Contains calculated geometric quantities related to upscattering in Earth.
+
+4) Exclusion-Curves/
+
+   Contains no-approximation exclusion curves.
+
+5) Existing-Limits/
+
+   Contains digitized curves from various papers. See published articles for
+   details of each source.
+
+6) Guess-Curves/
+
+   Containts estimates of sensitivity used to seed numerical search.
+
+7) N-Specs/
+
+   Containts upscattering spectra of N
+
+8) SolarNuFlux/
+
+   Contains various components of solar neutrino flux taken from
+   http://www.sns.ias.edu/~jnb/SNdata/sndata.html
+
+9) Survival Probabilities
+
+   Contains survival probabilities assuming adiabatic evolution. Calculated
+   by J. Kopp. and provided to me by V. Brdar.
+
+10) PDFs
+
+    Figures for paper stored here. 

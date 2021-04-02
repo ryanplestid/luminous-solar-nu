@@ -1,0 +1,52 @@
+#####
+#  Upscattered neutrinos via dipole portal 
+#
+#  Author: Ryan Plestid
+#  Date:   March 10th 2021
+#
+#  Assoc. Pub.:   arXiv:2010.04193
+#
+#
+
+
+This folder contains 3 Mathematica notebooks, and 5 Subdirectories.
+### Notebooks 
+
+
+1) Limit-Setting.nb
+
+   This notebook makes the tau-exclusion limit, and calculates the exclusion
+   curve. 
+
+2) Solar-Neutrino-Fluxes-MassMixing,nb
+
+   This produces plots of relevant fluxes 
+
+3) Benchmark-values.nb
+
+   This just calculates some benchmark values of e.g. decay length, mixing
+   angles etc.
+
+
+### Directories
+
+
+1) Existing constraints
+
+   Constraints  on HNLs are here includiing BBN for tau
+
+2) N-Spec
+
+   HNL fluxes are stored here. 
+
+3) PDFs
+
+   Figures are stored here 
+
+4) Survival probabilities
+
+   For electron neutrrino transiting from sun to earth. 
+
+5) SolarNuFlux
+
+   Solar neutrino flux components
